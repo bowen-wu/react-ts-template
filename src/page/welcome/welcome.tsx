@@ -1,9 +1,12 @@
 import React from 'react';
+import scopedClasses from '../../utils/scopedClasses';
 import './welcome.scss';
+
+const sc = scopedClasses('welcome');
 
 const Welcome = () => {
     return (
-        <div className='welcome'>This is Welcome Page</div>
+        <div className={sc()}>This is Welcome Page</div>
     )
 };
 
